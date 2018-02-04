@@ -26,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /*
 https://regexr.com/
  */
-public class UsernameValidator {
+public class UsernameValidator extends BaseTestValidator {
 
     String _regex = "^[a-zA-Z]\\w{7,29}$";
     String regex = "^[a-zA-Z]([\\w]){7,29}$";
@@ -59,28 +59,11 @@ public class UsernameValidator {
     }
 
     @Test
-    public void testAgainstPurchasedTests() {
-
-        try {
-
-            Path path = Paths.get(getClass().getClassLoader().getResource("usernames.txt").toURI());
-            List<String> usernamestream = Files.lines(path).collect(Collectors.toList());
-            path = Paths.get(getClass().getClassLoader().getResource("usernames_results.txt").toURI());
-            List<String> resultstream = Files.lines(path).collect(Collectors.toList());
-
-            IntStream.range(
-                    0, usernamestream.size())
-                    //.peek(i -> System.out.println(usernamestream.get(i) + " " + resultstream.get(i)))
-                    .forEach(i -> assertTrue(assertEquals(usernamestream.get(i), resultstream.get(i))));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
+    public void runPurachasedTests() {
+        testAgainstPurchasedTests("usernames.txt", "usernames_results.txt");
     }
 
-    private boolean assertEquals(String first, String second) {
+    protected boolean assertEquals(long count, String first, String second) {
 
         boolean result = usernameValidator(first).equals(second);
         if (!result) {
