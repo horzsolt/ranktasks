@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/*
+https://www.regular-expressions.info/ip.html
+ */
 class RegularExpressionTest {
 
     @Test
@@ -63,5 +66,7 @@ class RegularExpressionTest {
 }
 
 class MyRegex {
-    public static String pattern = "^(([0-9]|[0-9][0-9]|[0-2][0-4][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[0-9][0-9]|[0-2][0-4][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$";
+    public static String pattern = "^(([0-9]|[0-9][0-9]|[0-2][0-4][0-9]|1[0-9]" +
+            "{2}|2[0-4][0-9]|25[0-5])\\.)" +
+            "{3}([0-9]|[0-9][0-9]|[0-2][0-4][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$";
 }
