@@ -9,7 +9,7 @@ import static horzsolt.algorithms.array.PrintPairs.*;
 public class PrintPairsTest {
 
     @Test
-    void TestPrintPairs() {
+    void testPrintPairs() {
         int[] numbers = { 2, 4, 3, 5, 7, 8, 9 };
         int[] numbersWithDuplicates = { 2, 4, 3, 5, 6, -2, 4, 7, 8, 9 };
         prettyPrint(numbers, 7);
@@ -17,7 +17,7 @@ public class PrintPairsTest {
     }
 
     @Test
-    void TestPrintPairsUsingSet() {
+    void testPrintPairsUsingSet() {
         prettyPrintSet(getRandomArray(9), 11);
         prettyPrintSet(getRandomArray(10), 12);
     }

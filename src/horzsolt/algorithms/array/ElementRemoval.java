@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ElementRemoval {
 
-    public static void ElemRemoval() {
+    public static void elemRemoval() {
         //Scanner in = new Scanner(System.in);
         int[] intArr = {1, 2, 5, 12, 7, 3, 8};
         System.out.print("Enter Element to be deleted : ");

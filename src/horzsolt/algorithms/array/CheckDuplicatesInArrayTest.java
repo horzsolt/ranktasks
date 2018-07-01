@@ -9,7 +9,7 @@ import static horzsolt.algorithms.array.CheckDuplicatesInArray.checkDuplicateUsi
 public class CheckDuplicatesInArrayTest {
 
     @Test
-    void TestCheckDuplicatesInArray() {
+    void testCheckDuplicatesInArray() {
 
         String[] withDuplicates = new String[] {"one","two","three","one"};
         String[] withoutDuplicates = new String[] {"one","two","three"};

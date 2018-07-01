@@ -10,7 +10,7 @@ import static horzsolt.algorithms.array.MissingNumberFromSortedArray.missingNumb
 public class MissingNumberFromSortedArrayTest {
 
     @Test
-    void TextMissingNumberFromSortedArray() {
+    void textMissingNumberFromSortedArray() {
 
         System.out.println("Test #1 : Missing number in sorted array ");
         int[] input = new int[]{1, 2, 3, 4, 6};

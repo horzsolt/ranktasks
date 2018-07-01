@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class QuickSortTest {
 
     @Test
-    void TestQuickSort() {
+    void testQuickSort() {
 
         int[] unsorted = {6, 5, 3, 1, 8, 7, 2, 4};
         System.out.println("Unsorted array :" + Arrays.toString(unsorted));

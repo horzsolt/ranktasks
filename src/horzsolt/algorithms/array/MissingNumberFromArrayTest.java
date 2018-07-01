@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class MissingNumberFromArrayTest {
 
     @Test
-    void TestOneMissingNumberFromArray() {
+    void testOneMissingNumberFromArray() {
 
         int[] arr1 = {10,9,3,6,4,7,8,1,2};
         assertTrue(5 == oneMissingNumberFromArray(arr1));
@@ -22,7 +22,7 @@ public class MissingNumberFromArrayTest {
     }
 
     @Test
-    void TestMultipleMissingNumbersFromArray() {
+    void testMultipleMissingNumbersFromArray() {
         // two missing number
         multipleMissingNumbersFromArray(new int[]{1, 2, 3, 4, 6, 7, 9, 8, 10}, 10);
 
