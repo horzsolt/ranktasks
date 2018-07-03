@@ -1,6 +1,6 @@
 package horzsolt.algorithms.string;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static horzsolt.algorithms.string.ReverseString.reverse;
 import static horzsolt.algorithms.string.ReverseString.reverseRecursively;

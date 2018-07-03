@@ -1,8 +1,5 @@
 package horzsolt.ranktasks;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -13,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 public abstract class BaseTestValidator {
 
@@ -30,7 +27,7 @@ public abstract class BaseTestValidator {
 
             IntStream.range(
                     0, testCaseStream.size())
-                    .forEach(i -> Assertions.assertTrue(assertEquals(i, testCaseStream.get(i), resultStream.get(i))));
+                    .forEach(i -> assertTrue(assertEquals(i, testCaseStream.get(i), resultStream.get(i))));
 
         } catch (IOException e) {
             e.printStackTrace();

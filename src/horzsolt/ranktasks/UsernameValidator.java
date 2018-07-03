@@ -1,9 +1,5 @@
 package horzsolt.ranktasks;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 
 /*
 
@@ -12,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
     The first character of the username must be an alphabetic character, i.e., either lowercase character or uppercase character .
 
  */
+
+import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 /*
 https://regexr.com/

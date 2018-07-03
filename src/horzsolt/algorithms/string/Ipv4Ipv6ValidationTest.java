@@ -1,8 +1,8 @@
 package horzsolt.algorithms.string;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.Test;
+import static org.junit.Assert.assertTrue;
 
 public class Ipv4Ipv6ValidationTest {
 

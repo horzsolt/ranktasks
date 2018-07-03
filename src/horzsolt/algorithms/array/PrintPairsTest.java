@@ -1,8 +1,6 @@
 package horzsolt.algorithms.array;
 
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
+import org.junit.Test;
 
 import static horzsolt.algorithms.array.PrintPairs.*;
 

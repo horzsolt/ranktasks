@@ -1,10 +1,10 @@
 package horzsolt.algorithms.array;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static horzsolt.algorithms.array.MissingNumberFromArray.multipleMissingNumbersFromArray;
 import static horzsolt.algorithms.array.MissingNumberFromArray.oneMissingNumberFromArray;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 public class MissingNumberFromArrayTest {
 

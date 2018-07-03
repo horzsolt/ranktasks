@@ -1,11 +1,11 @@
 package horzsolt.ranktasks;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.Assert.assertEquals;
 
 /*
 http://tutorials.jenkov.com/java-regex/matcher.html

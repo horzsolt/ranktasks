@@ -1,6 +1,6 @@
 package horzsolt.algorithms.array;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static horzsolt.algorithms.array.ElementRemoval.elemRemoval;
 

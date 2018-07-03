@@ -1,4 +1,4 @@
-package horzsolt.algorithms.array;
+package horzsolt.ranktasks;
 
 public class RotateLeft {
 
