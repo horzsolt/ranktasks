@@ -14,6 +14,7 @@ public class FindFirstNonRepeatingCharacter {
      *                    as LinkedHashMap maintains insertion order.
      */
     public static char getFirstNonRepeatedChar(String str) {
+
         Map<Character,Integer> counts = new LinkedHashMap<>(str.length());
 
         for (char c : str.toCharArray()) {
@@ -37,9 +38,12 @@ public class FindFirstNonRepeatingCharacter {
      * repeated character from String.
      */
     public static char firstNonRepeatingChar(String word) {
+
         Set<Character> repeating = new HashSet<>();
         List<Character> nonRepeating = new ArrayList<>();
+
         for (int i = 0; i < word.length(); i++) {
+
             char letter = word.charAt(i);
             if (repeating.contains(letter)) {
                 continue;
@@ -66,6 +70,7 @@ public class FindFirstNonRepeatingCharacter {
      *          through String again.
      */
     public static char firstNonRepeatedCharacter(String word) {
+
         HashMap<Character,Integer> scoreboard = new HashMap<>();
         // build table [char -> count]
         for (int i = 0; i < word.length(); i++) {

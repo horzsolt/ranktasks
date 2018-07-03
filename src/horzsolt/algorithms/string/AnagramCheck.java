@@ -10,6 +10,7 @@ public class AnagramCheck {
      * @return true, if both String are anagram
      */
     public static boolean isAnagram(String word, String anagram) {
+
         if (word.length() != anagram.length()) {
             return false;
         }
@@ -34,6 +35,7 @@ public class AnagramCheck {
      * @return true, if both Strings are anagram.
      */
     public static boolean iAnagram(String word, String anagram) {
+
         char[] charFromWord = word.toCharArray();
         char[] charFromAnagram = anagram.toCharArray();
         Arrays.sort(charFromWord);
@@ -44,6 +46,7 @@ public class AnagramCheck {
 
 
     public static boolean checkAnagram(String first, String second) {
+
         char[] characters = first.toCharArray();
         StringBuilder sbSecond = new StringBuilder(second);
 

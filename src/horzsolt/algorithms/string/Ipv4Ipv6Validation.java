@@ -9,7 +9,7 @@ https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-6
 https://www.regular-expressions.info/ip.html
  */
 
-public class Ipv4Ipv5Validation {
+public class Ipv4Ipv6Validation {
 
     public static String isValid(String ip) {
 
